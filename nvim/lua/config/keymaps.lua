@@ -9,8 +9,10 @@ local mappings = {
 	-- go to the end of the line
 	{ "i", "jf", "<esc>$i<Right>", opts },
 	{ "n", "JF", "$i<Right>", opts },
+	{ "i", "fj", "<esc>^i", opts },
+	{ "n", "FJ", "^i", opts },
 	-- Select all
-	{ "n", "<C-a>", "gg<S-v>G", opts },
+	{ "n", "<leader>al", "ggVG", opts },
 	-- Explorer Ntree
 	{ "n", "<leader>pv", "<cmd>Ex<CR>", opts },
 	{ "n", "<Leader>t", ":NvimTreeToggle<Return>", opts },
